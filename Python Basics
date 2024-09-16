@@ -1,0 +1,340 @@
+#variable:-A variable is a name given to  memory location in a program
+name="dimple parihar"
+print("My name is :",name)
+age=21
+print("My age is :",age)
+
+
+
+#Rules of Identifiers
+#variables names are case sensitive (example:-"a" and "A" both are different)
+#only letters,numbers and underscore is allowed
+#only a letters and underscore should be first character
+#reserved words cannot be variables names
+#simple short and meaningful name
+#example:- fullName;_hello;variable20 etc
+full_Name="shruti"
+print(full_Name)
+
+
+
+#data types
+#1-Integers
+#2-Sring
+#3-Float
+#4-Boolean
+#5-None
+name01="Song Joong-ki"
+age1=38
+occupation="Korean Actor"
+print(type(name01))
+print(type(age1))
+print(type(occupation))
+#integers
+his_age=29
+print(type(his_age))
+#string
+his_name="Kim soo-hyun"
+print(type(his_name))
+#float
+product_price=23.89
+print(type(product_price))
+#Boolean
+age_4=23
+old=False
+print(type(old))
+#none
+age=12
+old=False
+a=None
+print(type(a))
+
+
+
+#keywords in python
+#and,else,in,return.as.except,is,True,assert,finally,lambda,try,break,false,nonlocal,with,class,fornone,while,continue,from,not,yeild,or,dlobal,def,del,if,pass,eif,import,raise
+
+
+#print sum
+num1=24
+num2=44
+sum=num1 + num2
+print("the total sum is :",sum)
+
+
+
+#print sub
+number1=376843
+number2=3373
+difference= number1 - number2
+print("the difference is :",difference)
+
+
+
+# Types of Tokens
+#puctuators are symbols to organize sentence structure in programming
+#(),{},@,[],# etc.
+#-=,+=,/=,*=,//=,= etc.
+
+
+
+#python is typed language
+#typed is divided into two parts
+#implicit:-operations or conversions that happen automatically by the compiler or interpreter without explicit instructions from the programmer. 
+#explicit:-actions or conversions that are clearly and directly specified by the programmer, leaving no room for automatic or implicit interpretation.
+
+
+
+#expression given 
+#In Python, when you multiply a string by a number, it results in the string being repeated that many times. For example, if you have a string "hello" and you multiply it by 3, it will produce "hellohellohello".
+A,B=2,3
+Txt="@"
+print(2*Txt*3) 
+#string and string can operate with + (concatenation)
+A,B="2",3
+Txt="@"
+print((A+Txt)*B)
+#In Python, numeric values (both integers and floats) can be operated on using a variety of arithmetic operators
+A,B=2,3
+C=4
+print(A+B*C)
+#In Python, when you perform arithmetic operations between an integer and a float, the result will be a float
+A,B=15,89.0
+C=A*B
+print(C)
+#In Python, the result of the division operator / when used with two integers is always a float
+C,D=4,6
+E=C/D
+print(E)
+# In Python, when you perform floor division (//) between a float and an integer, the result will be a float.
+A,B=1.5,3
+C=A//B
+print(C,A/B)
+#floor gives closest integer,which is lesser than or equal to the float value
+#result of (A//B) is same as floor(A/B)
+#0.1->1 ; -3.5->-4 ; 2-> 2
+a,b=12,5
+c=a//b
+print(c)
+a,b=-12,5
+c==a//b
+print(c)
+a,b=12,-5
+c=a//b
+print(c)
+
+
+
+#remainder is negative when denominator is negative
+#n=+ result=+ ; -            ; +  result= -; -
+#d=+          ; -  result= + ; -           ; + result= +
+a,b=5,2
+c=a%b
+print(c)
+a,b=-5,-2
+c=a%b
+print(c)
+a,b=5,-2
+c=a%b
+print(c)
+a,b=-5,2
+c=a%b
+print(c)
+
+
+
+#comments
+# single comment(#)
+# multiple comment(""")
+
+
+
+#we can take input from users in many ways 
+#input in python
+#input()statement is used to accept values (using keyword) from user
+#1.string input #result for input() is always a str
+name = input("Enter your name :")
+print("welcome",name,"How are you!")
+#2.int input # if we written input() it gives us str type but we want int type for this we use int before input()
+age = int(input("Enter your age : "))
+print("you are",age,"years old")
+#3.float input # same
+price = float (input("price : "))
+print(price)
+
+
+
+#/* is a symbol used in python for single line comment: False
+#2ndNAme is an invalid identifier in python:False
+#** is a valid arithmetic operator in python:True
+#in is a valid operator in python:False
+#variable declaration is implicit in python:True
+
+
+
+#types of operators
+#arithmetic operators( + , - , * , / , // , % , **)
+a=34
+b=47
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a%b)
+print(a**b)
+print(a//b)
+#relational / comparison operator (== , != , > , < , >= , <=)(always return true /false output)
+a=54
+b=69
+print(a==b)
+print(a!=b)
+print(a>b)
+print(a<b)
+print(a>=b)
+print(a<=b)
+#assignment operator(= , -= , *= , /= , %= ,//= , **=)
+num=47
+num-=23
+print("num :",num)
+num*=33
+print("num :",num)
+num/=73
+print("num :",num)
+num%=30
+print("num :",num)
+num//=23
+print("num :",num)
+num**=33
+print("num :",num)
+#logical operator(not,and,or)(always return true/false output)
+a=3
+b=7
+print(not False)
+print(not(a>b))
+
+
+
+v1=789
+v2=44
+print("and operator:",v1 and v2)
+print("or operator:",v1 and v2)
+
+
+
+#membership operator(in,not in)
+#identity operator(is, is not)
+#bitwise operator ( & , | , ^)
+
+
+
+#condition statement
+#if-elif-else(SYNTAX)
+#if(condition):
+#statement1
+#elif(condition):
+#statement2
+#else:
+#statement
+#indentation:-proper spacing
+
+#traffic light
+light=input("light :")
+if(light=="red"):
+    print("stop")
+elif(light=="green"):
+    print("Go")
+elif(light=="yellow"):
+    print("look")
+else:
+    print("light is broken")
+
+
+
+#grades of students
+marks = int(input("marks: "))  # Convert input to integer
+if marks >= 90:
+    print("A")
+elif marks >= 80 and marks < 90:
+    print("B")
+elif marks >= 70 and marks < 80:
+    print("C")
+else:
+    print("D")
+
+
+
+ #conditional statement
+ #single line if/ternary operator
+ #<var>=<var1>if<condition>else<var2>
+food=input("food:")
+eat="Yes" if food=="cake" else "no"
+print(eat)
+#<str1>if<condition>else<str2>
+food=input("food:")
+print("sweet") if food=="cake " or food=="jalebi" else print("not sweet")
+
+#clever if /ternary operator
+#<var>=(false_val,true_val)[<condition>]
+age=int(input("age:"))
+vote = ("yes","no") [age >= 18]
+
+sal=float(input("age:"))
+tax=sal*(0.1,0.2)[sal<=50000]
+print(tax)
+
+
+
+#best practices
+#simple instructions
+#one instruction per task
+#short & meaningful variable names
+#use appropriate comments 
+#avoid complex expressions
+
+
+
+#best practices
+#calculate simple interest
+p=float(input("p: "))#principal
+r=float(input("r: "))#rate
+t=float(input("t: ")) #time
+si=(p*r*t)/100 
+print(si)    
+
+
+
+#Type conversion(there are two types of conversion 1.conversion:- automatically conversion 2.casting:-manually(forcefully))
+#if we add int number and float number,result always in float
+#conversion
+v1=33
+v2=45.6
+sum=v1+v2
+print(sum)
+print(type(v1))
+print(type(v2))
+#if we add float number and float number,result alaways in float
+a=33.4
+b=5.4
+sum=a+b
+print(sum)
+print(type(a))
+print(type(b))
+#if we add int number and int number,result always in int
+a=87
+b=68
+sum=a+b
+print(sum)
+print(type(a))
+print(type(b))
+
+#casting
+a=int("34")
+b=34.45
+print(a+b)
+print(type(a))
+#Type casting in programming is the process of converting a value from one data type to another. In Python, type casting is used to explicitly change the data type of a value to fit into a new type. This is particularly useful when you need to perform operations that require specific types or when you want to ensure compatibility between different types.
+#example
+a=23
+b=str(938)
+print(type(b))
+
