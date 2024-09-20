@@ -1,3 +1,24 @@
+# Key takeaways from this chapter
+# A brief introduction of python like what exactly it is for e.g Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together.Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance.Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.
+# Features in Python:
+# 1. Free and Open Source 
+# 2. Easy to code 
+# 3. Easy to Read
+# 4. Object-Oriented Language 
+# 5. GUI Programming Support 
+# 6. High-Level Language 
+# 7. Extensible feature 
+# 8. Easy to Debug 
+# 9. Python is a Portable language 
+# 10. Python is an Integrated language 
+# 11. Interpreted Language: 
+# 12. Large Standard Library 
+# 13. Dynamically Typed Language
+#  14. Frontend and backend development 
+# 15. Allocating Memory Dynamically
+
+
+
 #variable:-A variable is a name given to  memory location in a program
 name="dimple parihar"
 print("My name is :",name)
