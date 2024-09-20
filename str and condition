@@ -1,0 +1,103 @@
+#strings
+#string is data type that stores a sequence of characters
+#all three string is valid in python
+str1="This is a string"
+str2='dimple parihar'
+str3="""this is a string"""
+
+
+
+#escape sequence characters
+str="This is a string.\nwe are creating it in python" #\n(escape sequence character)
+print(str)
+
+
+
+#Basic operation
+#1.Concatenation
+#"hello" + "world" = "helloworld"
+str1="dimple"
+str2="parihar"
+final_str= str1 + str2
+print(final_str)
+#2.length of str len(str)
+str="hello everyone.How are you!"
+len=len(str)
+print(len)
+
+
+
+#indexing
+#in python string numbers starts from 0
+#to access character
+str="Dimple Parihar"
+ch=str[9]
+print(ch)
+
+
+
+#slicing:-Accessing parts of a string
+#str[starting_idx : ending_idx]#ending idx is not included
+str="pineapple"
+print(str[0 : 6])
+print(str[6 : 9])
+#slicing(negative index)(only in python language)
+str="pineapple"#(-5 -4 -3 -2 -1)
+print(str[-5 : -1])
+
+
+
+#string functions
+str="i love python"
+print(str.endswith("thon"))#returns true if string ends with substr
+print(str.capitalize())#capitalize 1st char
+print(str.replace("python","coding"))#replaces all occurrences of old
+print(str.find("love"))#returns 1st index of 1st occurrer
+print(str.count("o"))#counts the occurrence of substr
+
+
+
+#conditional statement
+#if-elif-else(syntax)
+#if(condition):
+#    statement1
+#elif(condition):
+#    statement2
+#else:
+#    statementN
+
+#traffic light
+light=input("light :")
+if(light=="red"):
+    print("stop")#indentation (proper spacing)
+elif(light=="green"):
+    print("Go")
+elif(light=="yellow"):
+    print("look")
+else:
+    print("light is broken")
+
+
+    
+#grade students based on marks
+marks = int(input("marks: "))  # Convert input to integer
+if marks >= 90:
+    print("A")
+elif marks >= 80 and marks < 90:
+    print("B")
+elif marks >= 70 and marks < 80:
+    print("C")
+else:
+    print("D")
+
+
+
+#nesting statement 
+age=34
+if(age >= 18):
+    if(age >= 80):
+        print("cannot drive")
+    else:
+        print("can drive")
+else:
+    print("cannot drive")
