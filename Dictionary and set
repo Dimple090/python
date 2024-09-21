@@ -1,0 +1,115 @@
+#Dictionary in python
+#dictionaries are used to store data values in key:value pairs
+#they are unordered,mutable and don't allow duplicate keys 
+#example
+info={
+    "name" : "dimple",
+    "cgpa" : 7.5,
+    "marks": [89,99,78],
+    "is_adult": True,
+    "sunjects":["python","web development","architect"],
+    "topics":("dict","set"),
+}
+print(type(info))
+print(info)
+print(info["name"])
+print(info["sunjects"])
+info["name"]="pretty"#replace name
+print(info)
+info["surname"]="parihar"#add element
+
+
+
+#note:-In a dictionary, the values can accept almost all data types, but the keys must be immutable. This means you can't use lists or dictionaries as keys because they are mutable. Only types like strings, numbers, and tuples can be used as keys
+#dictionary:-mutable
+ #null_dict
+
+
+
+#Nested Dictionaries
+student={
+    "name":"shivam",
+    "score": {
+       "phy":94.4,
+       "chem": 90,
+    },
+    "cgpa":9.6
+}
+print(student["score"]["phy"])
+
+
+
+#Dictionary Methods
+student={
+    "name":"shivam",
+    "score": {
+       "phy":94.4,
+       "chem": 90,
+    },
+    "cgpa":9.6,
+    "subjects":{
+        "maths"
+        "phy"
+        "chem"
+        "java"
+}
+}
+#1.keys()
+print(student.keys())#returns all keys
+print(student)
+#2.values()
+print(student.values())#returns all values
+print(student)
+#3.items()
+print(student.items())#returns all(key,val) pairs as tuples
+print(student)
+#4.get("key")
+print(student.get("cgpa"))#returns the key accoprint(student.values())#returns all values
+print(student)
+#update(newdict)
+print(student.update({"city":"jammu"}))#insert the specified items to the dict
+print(student)
+
+
+
+#set in python
+#set is the collection of the unordered items
+#each element in the set must be unique and immmutable
+#list and dict never store in set(bcuz they both are mutable)
+collection={1,2,3,4,"hello","world","world",5}#ignore duplicate word
+print(collection)
+print(type(collection))
+print(len(collection))
+#empty set syntax
+null_set=set()
+print(type(null_set))
+
+
+
+#set methods
+#set:-mutable
+#set->elements->immutable
+#1.add(el)
+collection=set()
+collection.add(1)
+collection.add(2)
+collection.add(3)
+collection.add("dimple parihar")#adds an element
+print(collection)
+#2.pop()
+collection.pop()
+print(collection)#removes a random value
+#3.remove(el)
+collection.remove(3)
+print(collection)#removes the element 
+#4.clear()
+collection.clear()
+print(collection)#empties the set
+#5.union(set2)
+set1={1,2,3} 
+set2={2,3,4}   
+print(set1.union(set2)) #combines both set values and returns new
+#5intersection(set2)
+set1={1,2,3,4,5} 
+set2={2,3,4,6,5}       
+print(set1.intersection(set2)) #combines common values and return new
