@@ -1,0 +1,165 @@
+#loops in python
+
+#loops are used to repeat instructions
+count = 1
+while count <=5:
+    print("hello")
+    count += 1
+#  Initialization: The variable count is set to 1.
+# While Loop: The loop runs as long as count is less than or equal to 5.
+# Print Statement: Each iteration prints "hello".
+# Increment: After printing, count is increased by 1. 
+#we can also written above program like this
+i=1
+while i <=5:
+    print("dimple parihar")
+    i+=1
+
+
+
+
+i=1
+while i <=100:
+    print("India",i)
+    i+=1
+print("loop ended")
+
+
+
+#reverse
+i=5
+while i>=1:
+    print("love",i)
+    i-=1
+# Initialization: The variable i is set to 5.
+# While Loop: The loop continues as long as i is greater than or equal to 1.
+# Print Statement: Each iteration prints "love" followed by the current value of i.
+# Decrement: After printing, i is decreased by 1.
+
+
+
+#break and continue
+#break:used to terminate the loop when encountered
+i=1
+while i <=5:
+    print(i)
+    if(i==3):
+        break
+    i+=1
+print("loop eneded")
+
+
+
+i = 0
+while i < 10:
+    if i == 5:
+        break  # Exit the loop when i is 5
+    print(i)
+    i += 1
+
+
+
+
+#continue:terminates execution in the current iteration and continues execution of the loop with the next iteration
+i=0
+while i <=5:
+    if(i==3):
+        i+=1
+        continue
+    print(i)
+    i+=1
+
+i = 0
+while i < 10:
+    i += 1  # Increment first to avoid infinite loop
+    if i % 2 == 0:
+        continue  # Skip even numbers
+    print(i)
+
+
+
+
+
+
+#loops are used for sequential traversAl.For traversing list,string,tuples etc
+#FOR LOOPS
+#syntax
+#for (elment) in (list:)
+veggies=["potato","ladyfinger","tomato","bitter guard","cucumber"]
+for val in veggies:
+    print(val)
+
+tup=(2,7,4,9,5,6,7)
+for val in tup:
+    print(val)
+
+
+#NOTE:If we need to work with an iterator where we need to update a value and have a stopping condition, we should use a while loop. On the other hand, if we want to iterate over a collection of data types like tuples, lists, or strings, we should use a for loop.
+
+
+str="dimple parihar"
+for char in str:
+    print(char)
+    print(len(str))
+    print(type(str))
+
+
+#Both for and while loops in Python can have an optional else block. This else block will execute when the loop completes normally (i.e., it didn’t encounter a break statement). 
+str="dimple parihar"
+for char in str:
+    if(char=='a'):
+        print("a found")
+        break
+
+    print(char)
+else:
+    print("END")
+
+
+# How It Works
+# Iteration: The for loop iterates over each character in the string "dimple parihar".
+# Condition Check: For each character, it checks if the character is 'a'.
+# break Statement:
+# If it finds 'a', it prints "a found" and executes the break statement, which exits the loop immediately.
+# Because the loop was interrupted by break, the else block will not execute.
+# Normal Completion:
+# If the loop iterates through all characters without encountering the break (i.e., if there were no 'a' characters in the string), it would complete normally, and the else block would execute, printing "END".
+# Purpose of else
+# The else block is useful for handling scenarios where you want to perform an action only if the loop completes without being interrupted by a break.
+# In this example, if there was no 'a' in the string, you'd see the output "END", indicating that the loop finished without finding the specified character.
+
+
+
+#range()
+#range functions returns a sequence of numbers ,starting from 0 by default and increments by 1(by default) and stops before a specified number
+#range(start?,stop,step?)?=optional
+for el in range(5):
+    print(el)
+for el in range(1,5):
+    print(el)
+for el in range(1,5,2):
+    print(el)
+
+# The range() function generates a sequence of numbers and is commonly used in for loops. The syntax of range() can take one, two, or three arguments:
+# Single Argument: range(stop)
+# Generates numbers from 0 to stop - 1.
+# Two Arguments: range(start, stop)
+# Generates numbers from start to stop - 1.
+# Three Arguments: range(start, stop, step)
+# Generates numbers from start to stop - 1, incrementing by step.
+
+
+
+
+#pass statement
+#pass is a null statement that does nothing.it is used as placeholder for future code
+#for el in range(10):
+#pass
+for i in range(10):
+    pass
+
+print("work")
+#NOTE:we can use pass in if else
+#NOte:In Python, the pass statement is a no-operation (no-op) statement that serves as a placeholder. It’s often used in situations where syntactically some code is required, but you don't want to execute any code or you haven't implemented the code yet.
+
+
