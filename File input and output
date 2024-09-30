@@ -1,0 +1,95 @@
+#File input/output
+#python can be used to perform operations on a file.(read and write)
+#types of all files
+#Text files(data store as a character): .txt, .docx, .log etc
+#Binary files: .mp4, .mov, .png, .jpeg etc
+
+
+
+#open,read & close file
+#we have to open a file before reading or writing
+#f=open("file_name","mode")
+#"file_name"=sample.txt;demo.docx
+#"mode"=r:read mode;w:write mode
+#data=f.read()
+#f.close()
+
+f=open("demo.txt","r")
+data=f.read(7)
+print(data)
+f.close()
+
+
+#"r"=open for reading(default)
+#"w"=open for writing,truncating(first delete all then write any thing) the file first
+#"x"=create a new file and open it for writing
+#"a"=open for writing ,appending to the end to the file if it exixts
+#"b"=binary mode
+#"t"=text mode(default)
+#"+"=open a disk file for updating (reading or writing)
+
+#data=f.read():reads entire file
+#data=f.readline():reads one line at a time
+f=open("demo.txt","r")
+line1=f.readline()
+print(line1)
+
+line2=f.readline()
+print(line2)
+f.close()
+
+
+
+#writing to a file
+#1.f.open("demo.text","w")
+#f.write("this is a new line")#overwrites the entire file
+f=open("demo.txt","w")
+f.write("my name is dimple parihar")
+f.close()
+#2.f.open("demo.txt","a")
+#f.write("this is a new line")#adds to the file
+f=open("demo.txt","a")
+f.write("\nmy name is dimple parihar")
+f.close()
+
+#Note:If you want to create a file in Python if it doesn't already exist, you can use the following approach:
+f=open("sample.txt","a")
+f.close()
+f=open("sample.txt","w")
+f.close()
+
+
+
+f=open("demo.txt","r+")#overwrite from starting,no truncate
+f.write("abc")
+print(f.read())
+f.close()
+
+f=open("demo.txt","w+")#read,overwrite truncate
+print(f.read())
+f.close()
+
+f=open("demo.txt","a+")#pointer in the end,no truncate
+print(f.read())
+f.close
+
+
+
+#with syntax
+with open("demo.txt","r")as f:
+    data = f.read()
+    print(data)
+
+with open("demo.txt","w")as f:
+    data = f.write("new data")
+    print(data)
+
+
+
+#deleting a file
+#using the os module
+#module(like a code library)is a file written by another programmer that generally has a fn we can use
+#import os
+#os.remove(filename)
+import os
+os.remove("sample.py")
