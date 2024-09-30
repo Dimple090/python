@@ -1,0 +1,91 @@
+#Easy Questions
+
+#How do you create a list containing the numbers 1 to 5 in Python?
+my_list=[1,2,3,4,5]
+print(my_list)
+print(type(my_list))
+print(len(my_list))
+
+#How do you access the third element in a list named my_list?
+my_list=[10,20,30,40,50,60]
+third_element=my_list[2]
+print(third_element)
+
+#How do you add the number 6 to the end of a list named my_list?
+my_ist=[23,79,44,78.44,90]
+my_list.append(34)
+print(my_list)
+
+
+#How do you create an empty list in Python?
+# Method 1: Using square brackets
+empty_list1 = []
+print(empty_list1)  # Output: []
+# Method 2: Using the list constructor
+empty_list2 = list()
+print(empty_list2)  # Output: []
+
+
+#What is the index of the last element in a list named my_list?
+my_list=[1,2,33,4,5,6,88,23,12]
+# Using -1 to access the last element
+last_element = my_list[-1]  
+# Finding the index of the last element
+last_index = len(my_list) - 1  
+print(last_element)  
+print(last_index) 
+
+
+#How do you insert the number 100 at the second position in my_list?
+my_list = [88, 2, 3, 4, 5, 6, 7]
+my_list.insert(1, 100)  # Insert 100 at index 1 (the second position)
+print(my_list)           
+
+
+#How do you add multiple elements [10, 20, 30] to the end of my_list?
+my_list = [1, 23, 4, 5, 67, 8]
+my_list.extend([10, 20, 30])  # Add multiple elements at once
+print(my_list)  # Output: [1, 23, 4, 5, 67, 8, 10, 20, 30]
+
+
+#How do you check if the number 50 is present in my_list?
+my_list = [1, 23, 4, 5, 67, 8]
+
+# Check if 50 is in my_list
+if 50 in my_list:
+    print("50 is present in the list.")
+else:
+    print("50 is not present in the list.")
+
+
+
+#How do you sort the list my_list in ascending order?
+my_list=[12,863,542,9,39,2 ,1,763,34]
+my_list.sort()
+print(my_list)
+
+
+#How do you reverse the order of elements in my_list?
+my_list=[12,6738,964,33,22,63,68]
+my_list.reverse()
+print(my_list)
+
+
+
+#How do you count the occurrences of the number 5 in my_list?
+my_list = [5, 5, 12, 6738, 964, 5, 33, 22, 63, 68]
+count_of_fives = my_list.count(5)  # Count the occurrences of 5
+print(count_of_fives)  # Output: 3
+
+
+
+#How do you remove all elements from my_list?
+my_list=[3,74,5,2,8,39,93,625,23,44]
+my_list.clear()
+print(my_list)
+
+
+#How do you create a shallow copy of my_list?
+my_list = [3, 74, 5, 2, 8, 39, 93, 625, 23, 44]
+my_list_copy = my_list.copy()  # Create a shallow copy
+print(my_list_copy) # Output: [3, 74, 5, 2, 8, 39, 93, 625, 23, 44]
