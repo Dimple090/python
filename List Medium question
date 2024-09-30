@@ -1,0 +1,66 @@
+#medium question
+#How can you find the maximum and minimum values in my_list?
+my_list=[2398,92783,9120,39710,16274,91687,35426157,928762]
+max_value=max(my_list)
+print("max value is =",max_value)
+min_value=min(my_list)
+print("min value is=",min_value)
+
+
+
+#Write a list comprehension to create a new list that contains the squares of all even numbers from my_list.
+my_list = [12, 74, 9, 87, 6, 5, 98, 7, 65, 43, 67, 54]
+print("Original list:", my_list)
+# Create a new list with squares of even numbers
+squared_evens = [x**2 for x in my_list if x % 2 == 0]
+print("Squared even numbers:", squared_evens)
+
+
+
+#How do you remove duplicate elements from my_list while maintaining the order of elements?
+my_list = [12, 74, 9, 87, 6, 5, 98, 7, 65, 43, 67, 54, 12, 5, 6]
+# Function to remove duplicates while maintaining order
+def remove_duplicates(lst):
+    seen = set()  # Set to track seen elements
+    result = []   # List to store the unique elements
+    for item in lst:
+        if item not in seen:
+            seen.add(item)   # Add to the seen set
+            result.append(item)  # Append to the result list
+    return result
+# Remove duplicates
+unique_list = remove_duplicates(my_list)
+print("Original list:", my_list)
+print("List after removing duplicates:", unique_list)
+
+
+
+#Given two lists, list1 = [1, 2, 3] and list2 = [4, 5, 6], how do you combine them into a single list?
+list1=[1,2,3]
+list2=[4,5,6]
+combine_list=list1 + list2
+print(combine_list)
+
+
+
+#How do you sort my_list in descending order?
+my_list=[12,7,6,8,7,2,3,4,5,67,89,123,456,789,9876,545]
+my_list.sort(reverse=True)
+print(my_list)
+
+
+
+#How do you merge two lists into a single list, alternating elements from each?
+list1=[1,2,3,34,67,78,7865,234]
+list2=[4,5,623,44,26,74,980,56]
+merge_list=list1 + list2
+print(merge_list)
+
+
+
+#Given a nested list nested_list = [[1, 2], [3, 4], [5, 6]], how do you flatten it into a single list?
+nested_list = [[1, 2], [3, 4], [5, 6]]
+# Flattening using list comprehension
+flattened_list = [item for sublist in nested_list for item in sublist]
+print(flattened_list)  # Output: [1, 2, 3, 4, 5, 6]
+
