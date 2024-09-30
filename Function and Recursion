@@ -1,0 +1,111 @@
+#Function
+#block of statement that perform a specific task
+#def:function definition
+def calc_sum(a, b):#cal_sum(parameters)
+    total = a + b  
+    print(total)
+    return total
+# Call the function with the desired arguments
+calc_sum(23, 56)#(arguments)
+calc_sum(22,90)
+
+
+
+def print_hello():
+    print("hello")
+
+print_hello()
+print_hello()
+print_hello()
+
+#average of 3 numbers
+def cal_avg(a,b,c):
+    sum=a+b+c
+    avg=sum/3
+    print(avg)
+    return avg
+cal_avg(923,67,89)
+
+
+
+#there are two types of fn
+#1.built-in fn  2.user defined fn
+print("dimple parihar","pooja",end=" ")
+print("shruti")
+#Built-in functions are functions that are provided by Python as part of its standard library. You can use them directly without needing to define them yourself. Here are some common built-in functions:
+#print()
+print("Hello, World!")
+#len()
+my_list = [1, 2, 3]
+print(len(my_list))  
+#type()
+# Using type() to determine data types
+x = 10
+y = 3.14
+z = "Hello"
+a = [1, 2, 3]
+print(type(x))  # Output: <class 'int'>
+print(type(y))  # Output: <class 'float'>
+print(type(z))  # Output: <class 'str'>
+print(type(a))  # Output: <class 'list
+#range()
+for el in range(2,4,6):
+    print(el)
+
+
+
+#user defined fn:User-defined functions are functions that you create yourself to perform specific tasks. You define these functions using the def keyword
+def greet(name):
+    """Function to greet a person by name."""
+    print(f"Hello, {name}!")
+
+# Calling the user-defined function
+greet("Alice")  # Output: Hello, Alice!
+
+
+
+
+
+#Default parameters
+#assigning a default value to parameter ,which is used when no argument is passed
+def calc_sum(a, b=2):
+    print( a + b)  
+    return a + b
+calc_sum(9)
+
+def calc_sum(a=99, b=2):
+    print( a + b)  
+    return a + b
+calc_sum()
+
+
+
+#Recursion
+#when a fn calls itself repeatedly
+def show(n):
+    if(n==0):#base case(stop or not condition)
+        return
+    print(n)
+    show(n-1)
+
+show(5)
+
+
+#What is Recursion?
+# Recursion is a programming technique where a function calls itself in order to solve a problem. It typically involves breaking a problem down into smaller, more manageable subproblems of the same type.
+# How Recursion Works
+# Base Case: This is the condition under which the recursion stops. Without a base case, the function would call itself indefinitely, leading to a stack overflow.
+# Recursive Case: This is where the function calls itself with modified arguments to approach the base case.
+
+
+#Loops are used when you need to repeat a task multiple times, like with a for loop or a while loop
+# Recursion is used when a function calls itself to break down complex problems into smaller, more manageable sub-problems.
+# These two methods are interrelated. Any recursive solution can typically be implemented using loops, and vice versa. However, sometimes one approach can be more efficient or easier to understand than the other.
+
+def fact(n):
+    if(n==0 or n==1):#base case(stopping condition is very imp in recursion)
+        return 1
+    else:
+        return n * fact(n-1)
+print(fact(6))
+#Note:The base case is crucial in recursion. It serves as the stopping condition for the recursive calls. Without a proper base case, the function would call itself indefinitely, leading to a stack overflow error.
